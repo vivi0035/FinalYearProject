@@ -1,0 +1,346 @@
+
+.bookingHeader {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url("../../../img/header1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.bookingHeaderContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 60px 0px;
+}
+
+
+.calendarContain {
+    z-index: 2;
+}
+.headerContainer.listMode {
+    margin: 20px 0px 0px 0px;
+}
+
+.leftTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.headerTitle {
+    padding: 0px 0px 0px 0px;
+    font-family: 'CocoSharpS-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    color: #E9E9E9;
+}
+
+
+.headerList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerListItem.active {
+    border: 1px solid #311B92;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.headerDescription {
+    margin: 10px 0px 0px 0px;
+    font-family: 'CocoSharpS-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #E9E9E9;
+}
+
+.headerBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    background: #28A6CD;
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'CocoSharpS-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #E9E9E9;
+
+    cursor: pointer;
+    
+}
+
+.headerBtn:hover {
+    background-color: #F6F6F6;
+    color: #28A6CD;
+    border: 1px solid #F6F6F6;
+}
+
+
+.headerSecondaryBtn {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    background: #F6F6F6;
+    /* dark-blu */
+
+    border: 1px solid #2E344A;
+    border-radius: 8px;
+
+    font-family: 'CocoSharpS-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    /* identical to box height */
+
+
+    color: #2E344A;
+}
+
+.headerSecondaryBtn:hover {
+    background-color: #2e344a00;
+    color: #fff;
+    border: 1px solid #2E344A;
+
+}
+
+.headerSearchContainer {
+display: flex;
+width: 100%;
+max-width: 1024px;
+justify-content: center;
+}
+
+.bookingHeaderSearch {
+    height: 30px;
+    background-color: #F6F6F6;
+    border: 4px solid #262E47;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.headerIcon {
+    color: #2E344A;
+}
+
+.bookingHeaderSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+}
+
+.headerSearchText {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.date {
+    /* position: absolute; */
+    /* top: 50px; */
+    z-index: 2;
+}
+
+.datePicker {
+    /* position: absolute; */
+    /* top: 50px; */
+    z-index: 5;
+}
+
+.options {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 13px -4px #909090; 
+    box-shadow: 5px 5px 13px -4px #909090;
+
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.optionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.optionCounterBtn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1.5px solid #673AB7;
+    color: #673AB7;
+    cursor: pointer;
+}
+
+.optionCounterBtn:disabled {
+    cursor: not-allowed;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookingInput {
+    border: none;
+    /* border-radius: 5px; */
+    background-color: #F6F6F6;
+    padding: 3px 5px;
+    /* box-shadow: inset 0 3px 6px rgba(0,0,0,0.1); */
+    /* width: 190px; */
+    font-size: 16px;
+  }
+
+
+.react-timerange-picker {
+  display: inline-flex;
+  position: relative;
+}
+.react-timerange-picker,
+.react-timerange-picker *,
+.react-timerange-picker *:before,
+.react-timerange-picker *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.react-timerange-picker--disabled {
+  background-color: #f6f6f6;
+  color: #6d6d6d;
+}
+.react-timerange-picker__wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.react-timerange-picker__inputGroup {
+  min-width: calc((4px * 3) +  0.54em * 6  +  0.217em * 2);
+  height: 100%;
+  flex-grow: 1;
+  padding: 0 2px;
+  box-sizing: content-box;
+}
+.react-timerange-picker__inputGroup__divider {
+  padding: 1px 0;
+  white-space: pre;
+}
+.react-timerange-picker__inputGroup__input {
+  min-width: 0.54em;
+  height: 100%;
+  position: relative;
+  padding: 0 1px;
+  border: 0;
+  background: white;
+  font: inherit;
+  box-sizing: content-box;
+  -moz-appearance: textfield;
+}
+.react-timerange-picker__inputGroup__input::-webkit-outer-spin-button,
+.react-timerange-picker__inputGroup__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.react-timerange-picker__inputGroup__input:invalid {
+  background: rgba(255, 0, 0, 0.1);
+}
+.react-timerange-picker__inputGroup__input--hasLeadingZero {
+  margin-left: -0.54em;
+  padding-left: calc(1px +  0.54em);
+}
+.react-timerange-picker__inputGroup__amPm {
+  font: inherit;
+  -moz-appearance: menulist;
+}
+.react-timerange-picker__button {
+  border: 0;
+  background: transparent;
+  padding: 4px 6px;
+}
+.react-timerange-picker__button:enabled {
+  cursor: pointer;
+}
+.react-timerange-picker__button:enabled:hover .react-timerange-picker__button__icon,
+.react-timerange-picker__button:enabled:focus .react-timerange-picker__button__icon {
+  stroke: #0078d7;
+}
+.react-timerange-picker__button:disabled .react-timerange-picker__button__icon {
+  stroke: #6d6d6d;
+}
+.react-timerange-picker__button svg {
+  display: inherit;
+}
+.react-timerange-picker__clock {
+    display: none;
+  width: 200px;
+  height: 200px;
+  max-width: 100vw;
+  padding: 25px;
+  background-color: white;
+  border: thin solid #a0a096;
+  z-index: 2;
+}
+.react-timerange-picker__clock--closed {
+  display: none;
+}

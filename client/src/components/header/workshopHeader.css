@@ -1,0 +1,244 @@
+
+.workshopHeader {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url("../../../img/header1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.workshopHeaderContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 40px 0px;
+}
+
+
+.calendarContain {
+    z-index: 2;
+}
+.headerContainer.listMode {
+    margin: 20px 0px 0px 0px;
+}
+
+.leftTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.headerTitle {
+    padding: 0px 0px 0px 0px;
+    font-family: 'CocoSharpS-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    color: #E9E9E9;
+}
+
+
+.headerList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerListItem.active {
+    border: 1px solid #311B92;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.headerDescription {
+    margin: 10px 0px 0px 0px;
+    font-family: 'CocoSharpS-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #E9E9E9;
+}
+
+.headerBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    background: #28A6CD;
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'CocoSharpS-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #E9E9E9;
+
+    cursor: pointer;
+    
+}
+
+.headerBtn:hover {
+    background-color: #F6F6F6;
+    color: #28A6CD;
+    border: 1px solid #F6F6F6;
+}
+
+
+.headerSecondaryBtn {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    background: #F6F6F6;
+    /* dark-blu */
+
+    border: 1px solid #2E344A;
+    border-radius: 8px;
+
+    font-family: 'CocoSharpS-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    /* identical to box height */
+
+
+    color: #2E344A;
+}
+
+.headerSecondaryBtn:hover {
+    background-color: #2e344a00;
+    color: #fff;
+    border: 1px solid #2E344A;
+
+}
+
+.headerSearchContainer {
+display: flex;
+width: 100%;
+max-width: 1024px;
+justify-content: center;
+}
+
+.bookingHeaderSearch {
+    height: 30px;
+    background-color: #F6F6F6;
+    border: 4px solid #262E47;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.headerIcon {
+    color: #2E344A;
+}
+
+.bookingHeaderSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+}
+
+.headerSearchText {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.date {
+    /* position: absolute; */
+    /* top: 50px; */
+    z-index: 2;
+}
+
+.datePicker {
+    /* position: absolute; */
+    /* top: 50px; */
+    z-index: 5;
+}
+
+.options {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 13px -4px #909090; 
+    box-shadow: 5px 5px 13px -4px #909090;
+
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.optionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.optionCounterBtn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1.5px solid #673AB7;
+    color: #673AB7;
+    cursor: pointer;
+}
+
+.optionCounterBtn:disabled {
+    cursor: not-allowed;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
